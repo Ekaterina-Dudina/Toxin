@@ -1,0 +1,276 @@
+html
+	head
+		link(rel="stylesheet" href='css/style.min.css')
+		title Каталог
+	body
+		include html/header
+
+		.catalog 
+			.catalog__container._container
+				.catalog__body
+					.catalog__filter.filter-catalog 
+						.filter-catalog__date
+							.filter-catalog__date-title 
+								h3 Даты пребывания в отеле
+							.filter-catalog__date-body 
+								input.filter-catalog__date-calendar(id="filter-calendar")
+						.filter-catalog__guests 
+							h3.filter-catalog__guests-title гости
+							.filter-catalog__guests-body
+								include html/dropdown-guests
+						.filter-catalog__price.price
+							.price__body
+								.price__title 
+									h3 диапазон цены
+								.price__amount
+									p.price__amount-text
+										label.price__amount-label(for="amount") 
+										input.price__amount-input(type="text", id="amount" readonly)
+							.price__slider
+							.price__text Стоимость за сутки пребывания в номере
+						.filter-catalog__conditions.conditions
+							.conditions__title 
+								h3 правила дома
+							.conditions__item 
+								input.conditions__checkbox(type="checkbox", id="conditionsSmoke")
+								label.conditions__label(for="conditionsSmoke") Можно курить
+							.conditions__item 
+								input.conditions__checkbox(type="checkbox", id="conditionsPets")
+								label.conditions__label(for="conditionsPets") Можно с питомцами
+							.conditions__item 
+								input.conditions__checkbox(type="checkbox", id="conditionsGuests")
+								label.conditions__label(for="conditionsGuests") Можно пригласить гостей (до 10 человек)
+							.conditions__title 
+								h3 доступность
+							.conditions__item 
+								input.conditions__checkbox(type="checkbox", id="conditionsHall")
+								label.conditions__label.conditions__label-avaliability(for="conditionsHall") Широкий коридор
+								p.conditions__text Ширина коридоров в номере не менее 91 см.
+							.conditions__item 
+								input.conditions__checkbox(type="checkbox", id="conditionsInvalid")
+								label.conditions__label.conditions__label-avaliability(for="conditionsInvalid") Помощник для инвалидов
+								p.conditions__text На 1 этаже вас встретит специалист  и проводит до номера.
+						.filter-catalog__comfort 
+							h3.filter-catalog__comfort-title удобства номера
+							.filter-catalog__comfort-body
+								include html/dropdown-comfort
+						.filter-catalog__comfort-more.more-comfort
+							.more-comfort__header
+								h3.more-comfort__title дополнительные удобства
+								span.more-comfort__icon.material-icons-outlined keyboard_arrow_down
+							.more-comfort__body
+								.more-comfort__item 
+									input.more-comfort__checkbox(type="checkbox", id="breakfast")
+									label.more-comfort__label(for="breakfast") Завтрак
+								.more-comfort__item 
+									input.more-comfort__checkbox(type="checkbox", id="table")
+									label.more-comfort__label(for="table") Письменный стол
+								.more-comfort__item 
+									input.more-comfort__checkbox(type="checkbox", id="chair-feeding")
+									label.more-comfort__label(for="chair-feeding") Стул для кормления
+								.more-comfort__item 
+									input.more-comfort__checkbox(type="checkbox", id="crib")
+									label.more-comfort__label(for="crib") Кроватка
+								.more-comfort__item 
+									input.more-comfort__checkbox(type="checkbox", id="tv")
+									label.more-comfort__label(for="tv") Телевизор
+								.more-comfort__item 
+									input.more-comfort__checkbox(type="checkbox", id="shampoo")
+									label.more-comfort__label(for="shampoo") Шампунь
+					.catalog__content 
+						.catalog__header
+							h1 Номера, которые мы для вас подобрали
+						.catalog__room
+							article.room-card
+								.room-card__slider.slider-room-card
+									.slider-room-card__item
+										a.slider-room-card__image(href="room-cart.html") 
+											img(src="@img/rooms/888.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/888.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/888.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/888.jpg", alt="room")
+								.room-card__body
+									.room-card__info
+										.room-card__room-number
+											h3.room-card__title 
+												a.room-card__link-title № 888
+											.room-card__subtitle люкс
+										.room-card__price 
+											span 9 990₽ 
+											p в сутки
+									.room-card__rating
+										include html/stars-rating
+										.rating__info 
+											span 145 
+											p Отзывов
+							article.room-card
+								.room-card__slider.slider-room-card
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/840.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/840.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/840.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/840.jpg", alt="room")
+								.room-card__body
+									.room-card__info
+										h3.room-card__title 
+											a.room-card__link-title № 840
+										.room-card__subtitle 
+										.room-card__price 
+											span 9 900₽ 
+											p в сутки
+									.room-card__rating
+										include html/stars-rating
+										.rating__info 
+											span 145 
+											p Отзывов
+							article.room-card
+								.room-card__slider.slider-room-card
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/980.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/980.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/980.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/980.jpg", alt="room")
+								.room-card__body
+									.room-card__info
+										h3.room-card__title 
+											a.room-card__link-title № 980
+										.room-card__subtitle люкс
+										.room-card__price 
+											span 8 500₽ 
+											p в сутки
+									.room-card__rating
+										include html/stars-rating
+										.rating__info 
+											span 35 
+											p Отзывов
+							article.room-card
+								.room-card__slider.slider-room-card
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/856.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/856.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/856.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/856.jpg", alt="room")
+								.room-card__body
+									.room-card__info
+										h3.room-card__title 
+											a.room-card__link-title № 856
+										.room-card__subtitle 
+										.room-card__price 
+											span 7 300₽ 
+											p в сутки
+									.room-card__rating
+										include html/stars-rating
+										.rating__info 
+											span 19
+											p Отзывов
+							article.room-card
+								.room-card__slider.slider-room-card
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/740.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/740.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/740.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/740.jpg", alt="room")
+								.room-card__body
+									.room-card__info
+										h3.room-card__title 
+											a.room-card__link-title № 740
+										.room-card__subtitle 
+										.room-card__price 
+											span 6 000₽ 
+											p в сутки
+									.room-card__rating
+										include html/stars-rating
+										.rating__info 
+											span 44
+											p Отзыва
+							article.room-card
+								.room-card__slider.slider-room-card
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/982.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/982.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/982.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/982.jpg", alt="room")
+								.room-card__body
+									.room-card__info
+										h3.room-card__title 
+											a.room-card__link-title № 982
+										.room-card__subtitle 
+										.room-card__price 
+											span 5 800₽ 
+											p в сутки
+									.room-card__rating
+										include html/stars-rating
+										.rating__info 
+											span 56
+											p Отзывов
+							article.room-card
+								.room-card__slider.slider-room-card
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/982.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/982.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/982.jpg", alt="room")
+									.slider-room-card__item
+										a.slider-room-card__image(href="404.html") 
+											img(src="@img/rooms/982.jpg", alt="room")
+								.room-card__body
+									.room-card__info
+										h3.room-card__title 
+											a.room-card__link-title № 982
+										.room-card__subtitle 
+										.room-card__price 
+											span 5 800₽ 
+											p в сутки
+									.room-card__rating
+										include html/stars-rating
+										.rating__info 
+											span 56
+											p Отзывов
+		include html/footer
+		
+		

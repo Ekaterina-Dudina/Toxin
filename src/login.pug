@@ -1,0 +1,31 @@
+html
+	head
+		link(rel="stylesheet" href='css/style.min.css')
+	body
+		wrapper.wrapper
+			include html/header
+			main.main
+				.registration 
+					.registration__slider
+						.registration__slider__item
+							.registration__slider__image
+								img(src="@img/home/4.jpg", alt="room")
+						.registration__slider__item
+							.registration__slider__image
+								img(src="@img/home/5.jpg", alt="room")
+					.registration__body
+						form.registration__form(action="#" id="form")
+							h1 Войти
+							.registration__item 
+								label.registration__label(for="formEmail") 
+								input.registration__input._req(id="formEmail", type="text", name="email", placeholder="Email")
+							.registration__item 
+								label.registration__label(for="formPassword") 
+								input.registration__input._req(id="formPassword", type="password", name="password", placeholder="Пароль")
+							button.registration__button.btn.btn-2(type="submit") Войти
+						.registration__footer 
+							.registration__footer-text Нет аккаунта на Toxin?
+							.registration__footer-login 
+								.registration__foter-link.btn.btn-1
+									a(href="registration.html") Создать
+			include html/footer

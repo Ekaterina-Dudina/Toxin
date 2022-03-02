@@ -1,0 +1,183 @@
+/*Обнуление*/
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+/* Слайдер */
+.slick-slider {
+	min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+	display: flex;
+	align-items: flex-start;
+}
+
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+
+/* Стрелка */
+.slick-arrow {
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+
+/* Точки */
+.slick-dots {
+}
+.slick-dots li {
+}
+.slick-dots button {
+}
+
+/* Слайдер main */
+.main__slider {
+	position: relative;
+	padding: 0px;
+	max-width: 100%;
+}
+
+.main__slider .slick-arrow {
+	position: absolute;
+	top: 50%;
+	margin: -20px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 24px;
+	height: 24px;
+}
+.main__slider .slick-arrow.slick-prev {
+	left: 10px;
+	background: url("../img/rooms/icons/prev.svg") 0 0 no-repeat;
+	background-size: contain;
+}
+.main__slider .slick-arrow.slick-next {
+	right: 0;
+	background: url("../img/rooms/icons/next.svg") 0 0 no-repeat;
+	background-size: contain;
+}
+.main__slider .slick-arrow.slick-disabled {
+	opacity: 0.2;
+}
+
+.main__slider .slick-dots {
+	position: absolute;
+	top: 80%;
+	right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.main__slider .slick-dots li {
+	list-style: none;
+	margin: 2px;
+}
+.main__slider .slick-dots button {
+	font-size: 0;
+	width: 7.49px;
+	height: 7.49px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.main__slider .slick-dots li.slick-active button {
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+
+.main__slider__item {
+	padding: 0px;
+}
+.main__slider__item img {
+	max-width: 100%;
+}
+.main__slider__item.slick-center {
+}
+
+/* Слайдер комнаты */
+.slider-room-card {
+	position: relative;
+	padding: 0px;
+	max-width: 100%;
+}
+
+.slider-room-card .slick-arrow {
+	position: absolute;
+	top: 50%;
+	margin: -20px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 24px;
+	height: 24px;
+}
+.slider-room-card .slick-arrow.slick-prev {
+	left: 10px;
+	background: url("../img/rooms/icons/prev.svg") 0 0 no-repeat;
+	background-size: contain;
+}
+.slider-room-card .slick-arrow.slick-next {
+	right: 0;
+	background: url("../img/rooms/icons/next.svg") 0 0 no-repeat;
+	background-size: contain;
+}
+.slider-room-card .slick-arrow.slick-disabled {
+	opacity: 0.2;
+}
+
+.slider-room-card .slick-dots {
+	position: absolute;
+	top: 80%;
+	right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider-room-card .slick-dots li {
+	list-style: none;
+	margin: 2px;
+}
+.slider-room-card .slick-dots button {
+	font-size: 0;
+	width: 7.49px;
+	height: 7.49px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.slider-room-card .slick-dots li.slick-active button {
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+
+.slider-room-card__item {
+	padding: 0px;
+}
+.slider-room-card__item img {
+	max-width: 100%;
+}
+.slider-room-card__item.slick-center {
+}

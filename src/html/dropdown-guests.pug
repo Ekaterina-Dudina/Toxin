@@ -1,0 +1,23 @@
+.guests__dropdown.dropdown-guests
+	.dropdown-guests__header
+		span.dropdown-guests__current Сколько гостей
+		span.dropdown-guests__icon.material-icons-outlined keyboard_arrow_down
+	.dropdown-guests__body
+		.dropdown-guests__item взрослые
+			.dropdown-guests__amount 
+				button.dropdown-guests__button(data-action = "minus") -
+				span.dropdown-guests__counter(data-counter) 0
+				button.dropdown-guests__button(data-action = "plus") +
+		.dropdown-guests__item дети
+			.dropdown-guests__amount 
+				button.dropdown-guests__button(data-action = "minus") -
+				span.dropdown-guests__counter(data-counter) 0
+				button.dropdown-guests__button(data-action = "plus") +
+		.dropdown-guests__item младенцы
+			.dropdown-guests__amount 
+				button.dropdown-guests__button(data-action = "minus") -
+				span.dropdown-guests__counter(data-counter) 0
+				button.dropdown-guests__button(data-action = "plus") +
+		.dropdown-guests__buttons 
+			button.dropdown-guests__button(data-action = "clean") очистить
+			button.dropdown-guests__button(data-action = "close") применить

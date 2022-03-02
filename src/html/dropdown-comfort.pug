@@ -1,0 +1,23 @@
+.comfort__dropdown.dropdown-comfort
+	.dropdown-comfort__header
+		span.dropdown-comfort__current 2 спальни, 2 кровати...
+		span.dropdown-comfort__icon.material-icons-outlined keyboard_arrow_down
+	.dropdown-comfort__body
+		.dropdown-comfort__item спальни
+			.dropdown-comfort__amount 
+				button.dropdown-comfort__button-minus(data-action = "minus") -
+				span.dropdown-comfort__counter(data-counter) 2
+				button.dropdown-comfort__button(data-action = "plus") +
+		.dropdown-comfort__item кровати
+			.dropdown-comfort__amount 
+				button.dropdown-comfort__button-minus(data-action = "minus") -
+				span.dropdown-comfort__counter(data-counter) 2
+				button.dropdown-comfort__button(data-action = "plus") +
+		.dropdown-comfort__item ванные комнаты
+			.dropdown-comfort__amount 
+				button.dropdown-comfort__button-minus(data-action = "minus") -
+				span.dropdown-comfort__counter(data-counter) 0
+				button.dropdown-comfort__button(data-action = "plus") +
+		.dropdown-comfort__buttons 
+			button.dropdown-comfort__button(data-action = "clean") очистить
+			button.dropdown-comfort__button(data-action = "close") применить

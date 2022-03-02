@@ -1,0 +1,32 @@
+.calendar {
+}
+
+.calendar__body {
+	display: flex;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $darkShade100;
+	margin-bottom: 10px;
+	&__first-date {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__end-date {
+		display: flex;
+		flex-direction: column;
+	}
+	input {
+		max-width: 150px;
+		height: 44px;
+		border: 1px solid $darkShade25;
+		padding: 10px;
+		color: $darkShade75;
+		font-size: 14px;
+	}
+	#calendar__first-date {
+	}
+	#calendar__end-date {
+	}
+}

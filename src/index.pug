@@ -1,0 +1,37 @@
+html
+	head
+		link(rel="stylesheet" href='css/style.min.css')
+	body
+		wrapper.wrapper
+			include html/header
+			main.main
+				.main__container
+					.main__slider
+						.main__slider__item
+							.main__slider__image
+								img(src="@img/home/1.jpg", alt="room")
+						.main__slider__item
+							.main__slider__image
+								img(src="@img/home/2.jpg", alt="room")
+						.main__slider__item
+							.main__slider__image
+								img(src="@img/home/3.jpg", alt="room")
+					.main-body
+						.main-body__container._container 
+							.main-body__room-search.room-search 
+								.room-search__body 
+									.room-search__title 
+										h1 Найдём номера под ваши пожелания
+									.room-search__calendar
+										include html/calendar
+									.room-search__guests
+										h3.room-search__guests-title гости
+										include html/dropdown-guests
+									.room-search__buttons 
+										.room-search__button.btn.btn-2 
+											a.room-search__button-link(href="catalog.html") Подобрать номер
+										
+
+					
+				
+			include html/footer

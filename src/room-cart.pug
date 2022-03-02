@@ -1,0 +1,88 @@
+html
+	head
+		link(rel="stylesheet" href='css/style.min.css')
+	body
+		wrapper.wrapper
+			include html/header
+			main.main
+				.room-cart
+					.room-cart__images
+						.room-cart__block1
+							.room-cart__image 
+								img(src="img/room-cart/1.jpg")
+						.room-cart__block2
+							.room-cart__image 
+								img(src="img/room-cart/2.jpg")
+							.room-cart__image 
+								img(src="img/room-cart/3.jpg")
+					.room-cart__body._container
+						.room-cart__about.about
+							h3.about__title Сведения о номере
+							.about__body 
+								.about__item
+									span.about__icon._icon-comfort
+									.about__info
+										p.about__subtitle Комфорт
+										p.about__text Шумопоглощающие стены
+								.about__item
+									span.about__icon._icon-city
+									.about__info
+										p.about__subtitle Удобство
+										p.about__text Окно в каждой из спален
+								.about__item
+									span.about__icon._icon-whatshot
+									.about__info
+										p.about__subtitle Уют
+										p.about__text Номер оснащён камином
+						.room-cart__impress.impress 
+							h3.impress__title Впечатления от номера
+							.impress__body
+								.impress__item 
+									.impress__circle 
+									.impress__votes 
+										span.impress__votes-amount 260
+										span.impress__votes-text голосов
+								.impress__item 
+									.impress__rate
+										ul.impress__list 
+											li.impress__perfect Великолепно
+											li.impresss__good Хорошо
+											li.satisfactorily Удовлетворительно
+											li.impress__bad Разочарован
+					.room-cart__review.review._container
+						.review__header
+							h3.review__title Отзывы посетителей номера	
+							.review__amount
+								span.review__amount-number 2
+								p.review__amount-text Отзыва
+						.review__body 
+							.review__post 
+								.review__item
+									.review__icon 
+										img(src="img/users/murad.png")
+									.review__like 
+								.review__item
+									.review__user Мурад Сарафанов
+									.review__date 5 дней назад
+									.review__comment Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+							.review__post 
+								.review__item
+									.review__icon 
+										img(src="img/users/pantissiya.png")
+									.review__like 
+								.review__item
+									.review__user Патрисия Стёклышкова
+									.review__date Неделю назад
+									.review__comment Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент
+					.room-cart__footer._container
+						.room-cart__rules.rules-room-cart
+							h3.rules-room-cart__title Правила
+							ul.rules-room-cart__list 
+								li.rules-room-cart__item Нельзя с питомцами
+								li.rules-room-cart__item Без вечеринок и мероприятий
+								li.rules-room-cart__item Время прибытия — после 13:00, а выезд до 12:00
+						.room-cart__cancel.cancel-room-cart
+							h3.cancel-room-cart__title Отмена
+							.cancel-room-cart__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+					
+			include html/footer

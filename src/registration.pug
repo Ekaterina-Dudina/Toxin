@@ -1,0 +1,58 @@
+html
+	head
+		link(rel="stylesheet" href='css/style.min.css')
+	body
+		wrapper.wrapper
+			include html/header
+			main.main
+				.registration 
+					.registration__slider
+						.registration__slider__item
+							.registration__slider__image
+								img(src="@img/home/4.jpg", alt="room")
+						.registration__slider__item
+							.registration__slider__image
+								img(src="@img/home/5.jpg", alt="room")
+					.registration__body
+						form.registration__form(action="#" id="form")
+							h1 Регистрация аккаунта
+							.registration__item 
+								label.registration__label(for="formName")
+								input.registration__input._req(id="formName", type="text", name="name", placeholder="Имя")
+							.registration__item 
+								label.registration__label(for="formSurname")
+								input.registration__input._req(id="formSurname", type="text", name="surname", placeholder="Фамилия")
+							.registration__item 
+								.registration__options.options
+									.options__item
+										input.options__input._req(id="formMailGender", checked, type="radio", value="mail", name="gender")
+										label.options__label(for="formMailGender") Мужчина
+									.options__item
+										input.options__input._req(id="formFemailGender", type="radio", value="femail", name="gender")
+										label.options__label(for="formFemailGender") Женщина
+							.registration__item 
+								h3.registration__date-title Дата рождения
+								label.registration__label(for="formDate") 
+								input.registration__input._req(id="formDate", name="date", autocomplete="off", placeholder="ДД.ММ.ГГГ")
+							.registration__subtitle 
+								h3 Данные для входа в сервис
+							.registration__item 
+								label.registration__label(for="formEmail") 
+								input.registration__input._req(id="formEmail", type="text", name="email", placeholder="Email")
+							.registration__item 
+								label.registration__label(for="formPassword") 
+								input.registration__input._req(id="formPassword", type="password", name="password", placeholder="Пароль")
+							.registration__item.switch 
+								.switch__body
+									label.switch__label
+										input.switch__input(id="formSwitch", type="checkbox")
+										span.switch__slider
+								p.switch__text Получать спецпредложения
+							button.registration__button.btn.btn-2(type="submit") Зарегистрироваться	
+						.registration__footer 
+							.registration__footer-text Уже есть аккаунт на Toxin
+							.registration__footer-login 
+								.registration__foter-link.btn.btn-1
+									a(href="login.html") Войти
+			include html/footer
+		script(src='js/app.min.js')
